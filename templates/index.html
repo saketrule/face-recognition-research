@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script src="static/js/application.js"></script>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/layout_style.css">
+	<link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="static/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<div class="container">
+  <div class="jumbotron">
+    <h2>Automated facial recognition</h2>
+  </div>
+	<div class="tabs" id="tabMenuId">
+	<button type="button" id="trainTabButton"> Train Tab </button>
+	  <div class="menu" id="menuId">
+		<!-- Will change Session button with
+			https://stackoverflow.com/questions/44565816/javascript-toggle-switch-using-data
+			https://stackoverflow.com/questions/39846282/how-to-add-the-text-on-and-off-to-toggle-button
+		 -->
+		<!--  All this will be populated by js
+		<div style="float:right">
+		  <button type="button" id="startSessionButton"> Start Session </button>
+		  <button type="button" id="stopSessionButton" disabled> Stop Session </button>
+		  <button type="button" id="saveSessionButton" disabled> Save Session </button>
+		</div>
+		<div>
+		  <button type="button" id="snapAndRecognizeButton"> Snap & Recognize </button>
+		  <div style="float:left; margin-left:10px">
+		    <button type="button" id="startCameraScanButton"> Start camera scan </button>
+		    <button type="button" id="stopCameraScanButton" disabled> Stop camera scan </button>
+		  </div>
+		  <div style="float:left; margin-left:10px">
+		    <button type="button" id="startFolderScanButton"> Start saved session scan </button>
+		    <button type="button" id="stopFolderScanButton" disabled> Stop saved session scan </button>
+		  </div>
+		-->
+		</div>
+	</div>
+  </div>
+</div>
+
+<div class="container" id="content">
+  <div class="column main" id="mainDiv">
+    <div class="image-div" height=780>
+        <img id="myimage" src="" width="100%">
+        <!-- <div class="loadersmall" > </div> -->
+        <div id="info-div">
+        </div>
+    </div>
+  </div>
+
+    <div class ="column side">
+	<!-- Also populated by js -->
+    <div class="tbl-header">
+    <table id="nameTable" cellpadding="8" cellspacing="8" border="0">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Confidence</th>
+        </tr>
+      </thead>
+      <tbody id="list-body">
+      </tbody>
+    </table>
+    </div>
+    </div>
+</div>
+
+
+</body>
+</html>

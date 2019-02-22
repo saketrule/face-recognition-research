@@ -1,0 +1,104 @@
+.jumbotron{
+	margin-bottom: 0px;
+	color: #0000FF;
+}
+
+h3 {
+	margin-top: 5px;
+}
+
+.column{
+	float: left;
+	padding: 10px;
+	height: 80%;
+}
+
+.menu{
+	margin-top: 10px;
+}
+
+.column.main{
+	width: 70%;
+	//background-color: #f1f1f1;
+}
+
+.column.side {
+	float: right;
+	width: 30%;
+	//background-color: #f1b1c1;
+}
+
+/*td , th {
+	font-size: 15px;
+	padding-left :5px;
+	padding-right : 5px;
+}*/
+
+#info-div {
+	text-align: center;
+	width: 100%;
+}
+/*
+.newname{
+	color: 	#228B22;
+}*/
+
+#nameTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#nameTable td, #nameTable th {
+  border: 1px solid #ddd;
+  padding: 5px;
+  padding-left: 8px;
+}
+
+#nameTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#nameTable tr:hover {background-color: #ddd;}
+
+/* For spinner */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.loadersmall {
+    border: 5px solid #f3f3f3;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    border-top: 5px solid #555;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#nameTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.newname{
+	color: #228B22;
+}
